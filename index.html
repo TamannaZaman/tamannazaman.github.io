@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tamanna Zaman | Portfolio</title>
+  <style>
+    :root{
+      --primary:#0f172a;
+      --accent:#2563eb;
+      --bg:#f9fafb;
+      --card:#ffffff;
+      --text:#1e293b;
+      --muted:#64748b;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.7;
+    }
+    a{color:var(--accent);text-decoration:none}
+    header{
+      background:linear-gradient(135deg,var(--primary),var(--accent));
+      color:#fff;
+      padding:90px 20px;
+      text-align:center;
+    }
+    header h1{font-size:3rem;margin-bottom:10px}
+    header p{font-size:1.2rem;opacity:.95}
+    nav{
+      position:sticky;top:0;z-index:100;
+      background:#fff;
+      box-shadow:0 2px 10px rgba(0,0,0,.06)
+    }
+    nav ul{
+      display:flex;justify-content:center;gap:28px;
+      list-style:none;padding:16px
+    }
+    nav a{font-weight:600;color:var(--text)}
+    section{
+      max-width:1100px;
+      margin:auto;
+      padding:80px 20px
+    }
+    h2{
+      font-size:2.2rem;
+      margin-bottom:30px;
+      color:var(--primary)
+    }
+    .card{
+      background:var(--card);
+      padding:28px;
+      border-radius:18px;
+      box-shadow:0 10px 30px rgba(0,0,0,.07);
+      margin-bottom:26px
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:26px
+    }
+    .skills span{
+      display:inline-block;
+      background:#e0e7ff;
+      color:#1e3a8a;
+      padding:8px 14px;
+      border-radius:20px;
+      margin:6px;
+      font-size:.9rem
+    }
+    footer{
+      background:var(--primary);
+      color:#fff;
+      text-align:center;
+      padding:40px 20px
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Tamanna Zaman</h1>
+  <p>Backend Developer · Digital Accessibility Auditor · Tech for Social Impact</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I am a Computer Science graduate with a strong interest in backend development, digital accessibility, and inclusive technology.
+      I have hands-on experience working with Python, Django, and web technologies, alongside professional involvement in government-backed
+      digital accessibility initiatives and nonprofit leadership roles.
+    </p>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+
+  <div class="card">
+    <h3>Digital Accessibility Auditor – a2i (Innovate for All)</h3>
+    <p><em>June 2023 – Present</em></p>
+    <ul>
+      <li>Auditing websites to ensure accessibility for persons with disabilities.</li>
+      <li>Providing feedback and recommendations to improve usability and inclusiveness.</li>
+      <li>Collaborating with teams to support digital inclusion initiatives.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Director (Management) – Bangladesh Wheelchair Sports Foundation®</h3>
+    <p><em>July 2023 – Present</em></p>
+    <ul>
+      <li>Leading management and coordination activities for inclusive sports programs.</li>
+      <li>Supporting organizational planning and execution.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Backend Developer Trainee – Eutropia IT Solution</h3>
+    <p><em>February 2023 – April 2023</em></p>
+    <ul>
+      <li>Developed backend features using Python and Django.</li>
+      <li>Worked with frontend developers to improve application performance.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="card">
+    <h3>B.Sc. in Computer Science & Engineering</h3>
+    <p>University of Asia Pacific, 2023</p>
+    <p>CGPA: 3.14</p>
+  </div>
+  <div class="card">
+    <h3>Higher Secondary Certificate (HSC)</h3>
+    <p>Motijheel Model School and College, 2017</p>
+    <p>GPA: 4.25</p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Student Platform</h3>
+      <p>Social media platform integrating learning resources.</p>
+      <p><strong>Tech:</strong> Python, Django, HTML, CSS</p>
+    </div>
+    <div class="card">
+      <h3>Meeting Point</h3>
+      <p>Web platform to connect and meet new people.</p>
+      <p><strong>Tech:</strong> HTML, CSS, JavaScript, Django</p>
+    </div>
+    <div class="card">
+      <h3>eFlyer eCom</h3>
+      <p>Full-featured e-commerce website.</p>
+      <p><strong>Tech:</strong> Django, HTML, CSS</p>
+    </div>
+    <div class="card">
+      <h3>Arduino Smart Car</h3>
+      <p>Obstacle avoidance, voice & remote-controlled robotic system.</p>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <h2>Research & Thesis</h2>
+  <div class="card">
+    <h3>Bangla Fake News Detection Using NLP</h3>
+    <p>
+      Conducted research on detecting Bangla fake news using Natural Language Processing.
+      Implemented a BERT-based model focusing on language-specific challenges and real-world applicability.
+    </p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p><strong>Address:</strong> Jatrabari, Dhaka, Bangladesh</p>
+    <p><strong>Email:</strong> tamanna.pry@gmail.com</p>
+    <p><strong>Phone:</strong> +8801764359039</p>
+    <p><strong>LinkedIn:</strong> linkedin.com/in/tamanna-zaman</p>
+    <p><strong>GitHub:</strong> github.com/TamannaZaman</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Tamanna Zaman · Portfolio Website</p>
+</footer>
+
+</body>
+</html>
